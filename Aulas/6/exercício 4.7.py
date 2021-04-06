@@ -3,10 +3,10 @@ from numpy import *
 from matplotlib.pyplot import *
 import scipy.linalg as sl
 
-v=array([[1., -1., 1.]]).reshape(3,1)
+v=array([[1., -1., 1.]]).T
 print("v = ", v)
 print("\n")
-vT= v.reshape(1,3)
+vT= v.T
 numerador = dot(v, vT)
 denominador = dot(vT, v)
 
