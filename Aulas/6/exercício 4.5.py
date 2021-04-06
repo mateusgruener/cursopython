@@ -20,7 +20,7 @@ A = V[:,1:]
 
 print ("A = ", A)
 print("\n")
-AT=A.reshape(5,6)
+AT=A.T
 B = sl.inv(dot(AT, A))@AT
 
 print("B = ", B)
@@ -33,4 +33,3 @@ c = dot(B, y)
 print("c = ", c)
 print("\n")
 
-plot(x, polyval(c, x))
