@@ -19,6 +19,8 @@ Q = I - P
 print("Q = ", Q)
 print("\n")
 
-print(sl.eig(P))
-print("\n")
-print(sl.eig(Q))
+print("P @ v = ", dot(P,v))
+print("Portanto, o autovalor de P é 1\n")
+
+print("Q @ v = ", dot(Q,v))
+print("Portanto, o autovalor de Q é 0\n")
